@@ -13,7 +13,7 @@ and value and mutates that array and adds the value
     t.deepEqual(arr1, [1, 2])
 });
 
-test(`
+test.only(`
 Make a function that receives an array
 and value and copies the array with the value
 `, t => {

@@ -11,6 +11,8 @@ Inside of tests there are a series of tests for arrays, objects, strings, etc
 
 ```npm run test:arrays```
 
+![Output](./example-output.png)
+
 ### to only run some tests at a time you are working on
 
 - use the only modifier
