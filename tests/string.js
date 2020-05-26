@@ -14,10 +14,10 @@ test(`
 Make a function that takes a string
 and gets the character at an index
 `, t => {
-    function getFirstChar(str, index) {
+    function getCharAtLocation(str, index) {
         return str.charAt(index)
     }
-    t.deepEqual(getFirstChar('abc', 1), 'b')
+    t.deepEqual(getCharAtLocation('abc', 1), 'b')
 })
 
 test(`
@@ -43,4 +43,13 @@ using a for loop
         return newStr
     }
     t.deepEqual(reverseString('abc'), 'cba')
+})
+
+test(`
+Make a function that takes a sentence and counts the words in it
+`, t => {
+    function reverseString(sentence) {
+        return sentence.split(' ').length
+    }
+    t.deepEqual(reverseString('hello there'), 2)
 })

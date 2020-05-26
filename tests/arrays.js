@@ -49,8 +49,8 @@ IE: sumPrices([{price: 1.25}, {price: 2}]) === 3.25
 
 test(`
 Make a function that takes a list of strings and 
-converts it into a list of objects with a value key and the
-value of the string
+converts it into a list of objects with a
+value key and the value of the string
 `, t => {
     function sumPrices(arr) {
         return arr.map(item => ({value: item}))

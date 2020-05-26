@@ -1,10 +1,12 @@
 {
 	"ava": {
 		"verbose": true,
-		"failFast": false
+		"failFast": false,
+		"files": ["./tests/*.js"]
 	},
 	"scripts": {
-		"test": "ava"
+		"test": "ava",
+		"check": "node test-command.js"
 	},
 	"devDependencies": {
 		"ava": "^3.8.2"
