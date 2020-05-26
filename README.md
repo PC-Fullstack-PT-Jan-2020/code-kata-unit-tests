@@ -2,6 +2,9 @@
 
 Inside of tests there are a series of tests for arrays, objects, strings, etc
 
+```npm install```
+
+
 ## to test a file (write npm run test:<name-of-file>)
 
 - these are all included in the package.json
