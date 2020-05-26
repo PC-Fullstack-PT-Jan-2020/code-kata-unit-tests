@@ -13,9 +13,5 @@
 	"devDependencies": {
 		"ava": "^3.8.2"
 	},
-	"dependencies": {
-		"faucet": "0.0.1",
-		"nyc": "^15.0.1",
-		"tap-diff": "^0.1.1"
-	}
+	"dependencies": {}
 }
