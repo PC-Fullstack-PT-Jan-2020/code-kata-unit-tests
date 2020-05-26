@@ -1,14 +1,21 @@
 {
 	"ava": {
-		"verbose": true,
-		"failFast": false,
-		"files": ["./tests/*.js"]
+		"verbose": false,
+		"failFast": true
 	},
 	"scripts": {
-		"test": "ava",
-		"check": "node test-command.js"
+		"test": "ava --verbose=false --tap | faucet",
+		"test:arrays": "ava ./tests/arrays.js -w --verbose=false",
+		"test:objects": "ava ./tests/objects.js -w --verbose=false --tap | faucet",
+		"test:strings": "ava ./tests/strings.js -w --verbose=false --tap | faucet",
+		"test:challenges": "ava ./tests/challenges.js -w --verbose=false --tap | faucet"
 	},
 	"devDependencies": {
 		"ava": "^3.8.2"
+	},
+	"dependencies": {
+		"faucet": "0.0.1",
+		"nyc": "^15.0.1",
+		"tap-diff": "^0.1.1"
 	}
 }

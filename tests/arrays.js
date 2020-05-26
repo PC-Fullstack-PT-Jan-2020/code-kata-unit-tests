@@ -1,12 +1,13 @@
 const test = require('ava')
 
-test(`
+test.only(`
 Make a function that receives an array
 and value and mutates that array and adds the value
 `, t => {
     const arr1 = [1]
-    function mutateAdd() {
-
+    function mutateAdd(arr, v) {
+        arr.push(v)
+        return arr
     }
     t.deepEqual(mutateAdd(arr1, 2), [1, 2])
     t.deepEqual(arr1, [1, 2])
